@@ -1,0 +1,25 @@
+﻿@model ProGCoder_MomoAPI.Models.Momo.MomoExecuteResponseModel
+
+@{
+    ViewData["Title"] = "Home Page";
+    var postUrl = "tich-hop-thanh-toan-momo-voi-asp-net-core-7d5e4hP";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Thanh toán Momo với .NET Core, C# | ProG Coder</h1>
+    <p>Xem thêm nhiều bài viết hay tại <a target="_blank" href="https://progcoder.com">ProG Coder</a>.</p>
+    <p><a target="_blank" href="https://www.progcoder.com/p/@postUrl">Hướng dẫn chi tiết</a>.</p>
+
+    <div class="container">
+        <h1 class="text-success">Thanh Toán Thành Công</h1>
+        <p>Order ID: <strong>@Model.OrderId</strong></p>
+        <p>Amount: <strong>@Model.Amount</strong></p>
+        <p>Order Info: <strong>@Model.OrderInfo</strong></p>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        
+    });
+</script>
